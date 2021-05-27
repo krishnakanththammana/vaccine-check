@@ -1,3 +1,6 @@
+# commenting to hide auth details and mail list
+./options.js
+
 # Logs
 logs
 *.log
