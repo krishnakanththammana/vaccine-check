@@ -70,7 +70,7 @@ const sendMail = function(mailOptions_in) {
     }); 
 }
 
-const intervalMinutes = 5;
+const intervalMinutes = 0.5;
 let counter = 0;
 
 console.log("/**********************************/");
