@@ -44,7 +44,7 @@ const checkVaccineAvailable = (centers, district) => {
         const min_age_limit = 18;
         if(sessions && sessions.length) {
             const sessions18 = sessions.filter(session => (session.min_age_limit === min_age_limit && session.available_capacity > 0));
-            if(sessions18.length && sessions18.available_capacity_dose1) {
+            if(sessions18.length && sessions18[0].available_capacity_dose1 > 0) {
                 const vaccineAvailabeText = `vaccination available for ${min_age_limit} in ${district.name} district at ${center.name}`
                 console.log(vaccineAvailabeText);
                 mailOptions = {
