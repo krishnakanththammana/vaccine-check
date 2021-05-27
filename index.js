@@ -78,12 +78,12 @@ console.log(`* Checking once every ${intervalMinutes} minutes *`);
 console.log("/**********************************/");
 // send a request Immediately after the app starts and then schedule it according to ${intervalMinutes}
 sendReuqest();
-const initialMailOptions = {
-    ...mailOptions,
-    subject: "Vaccine check - Server started",
-    text: "Node server started checking for vaccines and will let you know if any slots are available    - Krish"
-}
-sendMail(initialMailOptions);
+// const initialMailOptions = {
+//     ...mailOptions,
+//     subject: "Vaccine check - Server started",
+//     text: "Node server started checking for vaccines and will let you know if any slots are available    - Krish"
+// }
+// sendMail(initialMailOptions);
 
 setInterval(() => {
     counter++;
